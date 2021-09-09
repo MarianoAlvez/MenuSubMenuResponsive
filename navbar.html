@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>NavBar Responsive con CSS & JS</title>
+</head>
+<body>
+    <span class="nav-bar" id="btnMenu"><i class="fas fa-bars"></i> Menú</span>
+    <nav class="main-nav">
+        <ul class="menu" id="menu">
+            <li class="menu_item"><a href="" class="menu_link">Inicio</a></li>
+            <li class="menu_item container_submenu">
+                <a href="#" class="menu_link submenu_btn">Productos <i class="fas fa-chevron-down"></i> </a>
+                <ul class="submenu"> <!--ul.submenu>li.menu_item*4>a.menu_link-->
+                    <li class="menu_item"><a href="" class="menu_link">Muebles Cocina</a></li>
+                    <li class="menu_item"><a href="" class="menu_link">Muebles Living</a></li>
+                    <li class="menu_item"><a href="" class="menu_link">Muebles Dormitorio</a></li>
+                    <li class="menu_item"><a href="" class="menu_link">Muebles Quincho</a></li>
+                </ul>
+            </li>
+            <li class="menu_item"><a href="" class="menu_link">Nosotros</a></li>
+            <li class="menu_item"><a href="" class="menu_link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <script src="navbar.js"></script>
+
+</body>
+</html>

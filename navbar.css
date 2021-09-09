@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none
+}
+
+.nav-bar {
+    background: rgb(61, 226, 238);
+    padding: 20px;
+    display: block;
+    color: cornsilk;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.menu {
+    background: rgb(121, 98, 98);
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu_link {
+    display: block;
+    padding: 15px;
+    color: cornsilk;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    background: rgb(97, 79, 79);
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.submenu .menu_link {
+    background: #333;
+    padding-left: 55px;
+}
+
+.submenu .menu_link:hover {
+    background: rgb(150, 131, 131);
+}
+
+.mostrar {
+    margin-left: 0;
+}
+
+@media (min-width: 960px) { /*Desktop*/
+
+.nav-bar {
+    display: none;
+}
+
+.menu {
+    margin-left: 0;
+    display: flex;
+}
+
+.container_submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container_submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+}/*Cierre Desktop*/
